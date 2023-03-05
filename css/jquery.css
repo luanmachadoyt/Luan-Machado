@@ -1,0 +1,133 @@
+@media screen and (max-width: 992px) {
+    .logo {
+        z-index: 1000;
+    }
+
+    .redes {
+        width: 300px;
+        height: 60px;
+        background: #1F2026;
+        border-radius: 23px;
+        margin-top: 7%;
+        display: flex;
+        justify-content: space-around;
+        transition: all .3s;
+    }
+
+    .redes img {
+        width: 35px;
+        transition: all .3s;
+    }
+
+
+    .logo-imagen img {
+        width: 170px;
+        height: 170px;
+        transition: all .3s;
+    }
+
+    #btn-mobile {
+        display: flex;
+        z-index: 1000;
+        padding-top: 15px;
+        left: 5px;
+    }
+
+    #btn-mobile:hover {
+        cursor: pointer;
+    }
+
+    .cabecalho {
+        /*display: none;*/
+        position: fixed;
+        width: 100%;
+        top: 0px;
+        background-color: rgba(0, 0, 0, 0.918);
+        right: 0px;
+        display: none;
+        text-align: center;
+        height: calc(100% - 0px);
+        padding: 100px 0;
+    }
+
+    #nav.active .cabecalho {
+        display: block;
+    }
+
+    .cabecalho li {
+        font-size: 25px;
+        padding: 3rem 0;
+    }
+
+    #hamburger {
+        color: white;
+        border-top: 2px solid;
+        width: 45px;
+
+    }
+
+    #hamburger::after,
+    #hamburger::before {
+        content: "";
+        display: block;
+        width: 45px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 12px;
+        transition: .6s;
+        position: relative;
+    }
+
+    #nav.active #hamburger {
+        border-top: transparent;
+    }
+
+    #nav.active #hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -15px;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .sobre-conteudo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        height: 500px;
+        background: #2E2E36;
+        border: 10px solid rgba(0, 0, 0, 0.3);
+        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 19px;
+        margin-bottom: 1000px;
+        gap: 30px;
+    }
+    .sobre-conteudo img{
+        display: none;
+    }
+    .linha-sobre{
+        display: none;
+    }
+    .conteudo-sobre h1{
+       font-size: 16px;
+       margin-top: 150px;
+    }
+    .conteudo-sobre h3{
+       font-size: 16px;
+    }
+    .conteudo-sobre p{
+        margin-bottom: 2%;
+        width: 400px;
+        color: #b2b2b2;
+        font-size: 10px;
+    }
+    .conteudo-sobre p:hover{
+        color: #ffffff;
+        transition: all .5s;
+    }
+}
