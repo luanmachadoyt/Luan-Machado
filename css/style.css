@@ -6,6 +6,11 @@
     text-decoration: none;
     list-style: none;
     font-family: Lexend;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 body {
@@ -38,26 +43,31 @@ body::-webkit-scrollbar-thumb {
 }
 
 header {
+    position: fixed;
+    overflow: hidden;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 50px;
     padding-top: 20px;
+    width: 90%;
 }
-
 .cabecalho {
     display: flex;
     gap: 3rem;
+    float: right;
+    
 }
 
 .cabecalho a {
     color: white;
 }
+
 .cabecalho a:hover {
     color: #94FF92;
 }
 
-.logo {
+.logo a{
     color: #94FF92;
 }
 
@@ -137,27 +147,29 @@ header {
     font-style: normal;
     font-size: 30px;
     color: #94FF92;
-    
+
 }
+
 .sobre-conteudo {
     display: flex;
     align-items: center;
     width: 1191px;
     height: 551px;
     background: #2E2E36;
-    border: 10px solid rgba(0, 0, 0, 0.3);
+    border: 10px solid rgba(0, 0, 0, 0.514);
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 19px;
-    margin-bottom: 1000px;
+    margin-bottom: 100px;
     gap: 30px;
 }
-.sobre-conteudo  img{
+
+.sobre-conteudo img {
     width: 250px;
     height: 350px;
     padding-left: 60px;
 }
 
-.linha{
+.linha {
     width: 200px;
     height: 2px;
     background: linear-gradient(to right, transparent, #94FF92);
@@ -166,19 +178,22 @@ header {
 }
 
 
-.linha-sobre{
+.linha-sobre {
     width: 2px;
     height: 350px;
     background: linear-gradient(to top, transparent, #94FF92);
     border-radius: 20px;
 }
-.conteudo-sobre{
+
+.conteudo-sobre {
     text-align: left;
 }
-.conteudo-sobre h1{
+
+.conteudo-sobre h1 {
     margin-bottom: 5%;
 }
-.conteudo-sobre h3{
+
+.conteudo-sobre h3 {
     margin-bottom: 5%;
     font-style: normal;
     font-weight: 400;
@@ -186,12 +201,81 @@ header {
     letter-spacing: 0.25em;
     color: #FFFFFF;
 }
-.conteudo-sobre p{
+
+.conteudo-sobre p {
     margin-bottom: 2%;
-    width: 600px;
+    min-width: 90%;
     color: #b2b2b2;
 }
-.conteudo-sobre p:hover{
+
+.conteudo-sobre p:hover {
     color: #ffffff;
     transition: all .5s;
+}
+
+.btn-cv{
+   width: 200px;
+   height: 60px;
+   background-color: transparent;
+   border-radius: 15px;
+   border: 2px solid #94FF92;
+   font-size: 16px;
+   color: white;
+   margin-top: 20px;
+}
+
+.btn-cv:hover{
+    background-color: #94FF92;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all .9s;
+}
+.conhecimentos{
+    background: #1A1A1D;
+    width: 100%;
+}
+.conteudo-conhecimentos{
+    display: flex;
+    align-items: center;
+    width: 1191px;
+    height: 551px;
+    background: #2E2E36;
+    border: 10px solid rgba(0, 0, 0, 0.514);
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 19px;
+    margin-bottom: 100px;
+    gap: 30px;
+}
+.texto-conhe{
+    text-align: left;
+    padding-left: 60px;
+}
+.texto-conhe h1{
+    padding-bottom: 20px;
+}
+.texto-conhe p{
+    color: white;
+    width: 500px;
+}
+.linguagens{
+    display: flex;
+    width: 600px;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.photoshop{
+    width: 100px;
+    height: 100px;
+    background-color: #1F2026;
+    border-radius: 10px;
+    transition: transform 500ms ;
+}
+.photoshop img{
+    padding: 20px 0;
+    width: 60px;
+}
+.photoshop:hover{
+    transform: scale(1.1);
+    cursor: pointer;
 }
